@@ -1,0 +1,26 @@
+@import "variables", 'mixins';
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: $main-bg;
+  height: 100vh;
+  
+}
+
+footer{
+  bottom: 0;
+  position: fixed;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+
+}
