@@ -1,1 +1,1 @@
-*{box-sizing:border-box}body{background:#090b1a;height:100vh}footer{bottom:0;position:fixed}footer .attribution{font-size:11px;text-align:center}footer .attribution a{color:#3e52a3}
+*{box-sizing:border-box}body{display:flex;justify-content:center;align-items:center;background:#090b1a;height:100vh}.card-container{background:#1b1938;height:400px;width:400px}.card-container .main-img{height:200px;width:300px}.card-container .main-img img{width:100%}footer{bottom:0;position:fixed}footer .attribution{font-size:11px;text-align:center}footer .attribution a{color:#3e52a3}
