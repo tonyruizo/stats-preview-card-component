@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import "variables", 'mixins';
 
+@include media-lg;
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -10,26 +12,29 @@
 
 body{
   @include centerIt;
+  flex-direction: column;
   background: $main-bg;
   height: 100vh;
   overflow: hidden;
-
+  position: relative;
 }
 
 .card-container{
   background: $card-bg;
-  height: 780px;
-  width: 328px;
+  height: 37.5rem;
+  width: 18.75rem;
   border-radius: 10px;
+  position: relative;
 
   .main-img{
-    height: 240px;
+    height: 11.45625rem;
     width: inherit;
     border-radius: 10px 10px 0 0;
     position: relative;
     
     img {
       width: inherit;
+      height: 11.45625rem;
       border-radius: inherit;
       position: absolute;
       opacity: 0.6;
@@ -39,7 +44,7 @@ body{
     .img-overlay{
       background-color: $accent-color;
       width: inherit;
-      height: 240px ;
+      height: 11.45625rem;
       border-radius: inherit;
       opacity: 1;
     }
@@ -55,11 +60,14 @@ body{
       font-family: 'Inter',
       sans-serif;
       font-weight: 700;
-      font-size: 0.9rem;
-      height: 200px;
-      @include centerIt;
-      padding: 0 30px;
-      // margin: 40px 10px 40px 50px;
+      font-size: 0.7rem;
+      margin-top: 35px;
+      // padding: 0 20px;
+      display: inline-block;
+      text-align: center;
+      width:75%;
+      margin-left: auto;
+      margin-right: auto;
       h1{
         align-items: center;
       }
@@ -68,8 +76,55 @@ body{
       }
     }
 
+    .card-description{
+      display: inline-block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin:15px 0;
+      p{
+        color: $para-color;
+        font-family:'Inter',
+        sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.7;
+        width: 14.0625rem
+      }
+    }  
+    .statistics{
+      flex-direction: column;
+      font-family: 'Inter',
+      sans-serif;
+      margin-top: -5px;
+
+      .items{
+        @include centerIt;
+        flex-direction: column;
+        color: $main-headings;
+        margin: 15px 0;
+        }
+
+        .numbers{
+          color: white;
+          font-size: 1.1rem;
+          margin-right: 3px;
+          margin-bottom: 3px;
+          font-weight: 700;
+        }
+
+        .title{
+          color: $stat-heading;
+          text-transform: uppercase;
+          font-family: 'Lexend Deca',
+          sans-serif;
+          font-size: 0.7rem;
+          font-weight: 400;
+        }
+      }
+    }
+
   }
-}
+
 
 footer{
   bottom: 0;
