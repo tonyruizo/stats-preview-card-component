@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import "variables", 'mixins';
 
-@include media-lg;
+// @include media-lg;
 
 *{
   box-sizing: border-box;
@@ -19,37 +19,30 @@ body{
   position: relative;
 }
 
-.card-container{
+.card{
   background: $card-bg;
   height: 37.5rem;
   width: 18.75rem;
   border-radius: 10px;
   position: relative;
 
-  .main-img{
-    height: 11.45625rem;
+  img {
     width: inherit;
-    border-radius: 10px 10px 0 0;
-    position: relative;
-    
-    img {
-      width: inherit;
-      height: 11.45625rem;
-      border-radius: inherit;
-      position: absolute;
-      opacity: 0.6;
-      top: 0;
-    }
-
-    .img-overlay{
-      background-color: $accent-color;
-      width: inherit;
-      height: 11.45625rem;
-      border-radius: inherit;
-      opacity: 1;
-    }
- 
+    height: 11.45625rem;
+    border-radius: inherit;
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
   }
+
+  .img-overlay {
+    background-color: $accent-color;
+    width: inherit;
+    height: 11.45625rem;
+    border-radius: inherit;
+    opacity: 1;
+  }
+
 
   .card-body{
     @include centerIt;

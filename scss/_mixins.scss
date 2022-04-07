@@ -4,34 +4,40 @@
   align-items: center;  
 }
 
-@mixin media-lg {
-  @media screen and (min-width: 1024px) {
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
+// @mixin media-lg {
+//   @media screen and (min-width: 1024px) {
+//     body {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       min-height: 100vh;
+//     }
+
+//     main{
+//       width: 800px;
+//       height: 400px;
+//     }
     
-    .card-container{
-      display: flex;
-      // width: 800px;
-      // height: 200px;
-      flex-direction: row-reverse;
-      // background: white;
+//     .card-container{
+//       display: flex;
+//       width: 800px;
+//       height: 200px;
+//       flex-direction: row-reverse;
+//       // background: white;
 
-      .main-img{
-        height: 800px;
-        width: 400px;
-      }
+//       .main-img{
+//         height: 800px;
+//         width: 400px;
+//         width: 100%;
+//       }
 
-      .card-body{
-        .heading{
-          width: 100%;
-        }
+//       .card-body{
+//         .heading{
+//           width: 100%;
+//         }
 
-      }
-    }
-  }
-}
+//       }
+//     }
+//   }
+// }
