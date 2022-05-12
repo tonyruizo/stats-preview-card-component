@@ -16,5 +16,5 @@ Thanks for checking out this front-end coding challenge.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site here](https://tonyruizo-stats-preview.netlify.app/)
+- Solution URL: [Solution here](https://www.frontendmentor.io/solutions/stats-preview-card-rJMft25Uc)
+- Live Site URL: [Live site here](https://tonyruizo-stats-preview.netlify.app/)
