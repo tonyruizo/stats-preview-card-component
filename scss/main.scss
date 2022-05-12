@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import "variables", 'mixins';
 
-// @include media-lg;
 
 *{
   box-sizing: border-box;
@@ -21,14 +20,14 @@ body{
 
 .card{
   background: $card-bg;
-  height: 37.5rem;
+  height: 39.5rem;
   width: 18.75rem;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   position: relative;
 
   img {
     width: inherit;
-    height: 11.45625rem;
+    height: 12.45625rem;
     border-radius: inherit;
     position: absolute;
     opacity: 0.6;
@@ -38,7 +37,7 @@ body{
   .img-overlay {
     background-color: $accent-color;
     width: inherit;
-    height: 11.45625rem;
+    height: 12.45625rem;
     border-radius: inherit;
     opacity: 1;
   }
@@ -55,7 +54,6 @@ body{
       font-weight: 700;
       font-size: 0.7rem;
       margin-top: 35px;
-      // padding: 0 20px;
       display: inline-block;
       text-align: center;
       width:75%;
@@ -126,10 +124,14 @@ footer{
   .attribution {
     font-size: 11px;
     text-align: center;
+    color: white;
 
     a {
       color: hsl(228, 45%, 44%);
     }
+    
   }
 
 }
+
+@import 'responsive.scss';
